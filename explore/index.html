@@ -50,6 +50,10 @@
       interstitialSlot.addService(googletag.pubads());
     }
 
+    // ✅ Define new banner ad slot
+    googletag.defineSlot('/23330730517/nitroplays.com_inter', [[320, 50], [320, 480], [480, 320]], 'div-gpt-ad-1770809529282-0').addService(googletag.pubads());
+
+    googletag.pubads().enableSingleRequest();
     googletag.enableServices();
 
     // ✅ Preload the interstitial ad immediately after page load
@@ -554,6 +558,12 @@
 </head>
 
 <body>
+    <!-- New Ad Slot -->
+    <div id="div-gpt-ad-1770809529282-0" style="text-align: center; margin: 10px 0;">
+        <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1770809529282-0'); });
+        </script>
+    </div>
 
     <main class="index-content">
         <section class="icon-group" id="iconGroup">
